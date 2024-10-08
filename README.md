@@ -20,13 +20,13 @@ TVOS Target: 10.0 or above
 ```ruby
 File not found: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/libarclite_iphonesimulator.a
 ```
-If you encounter the issue, Please update your project minimum depolyments to 11.0
+If you encounter the issue, Please update your project minimum deployments to 11.0
 
 
 ## Installation
 ### CocoaPods
 
-To integrate CocoaMQTT into your Xcode project using [CocoaPods](http://cocoapods.org), you need to modify you `Podfile` like the followings:
+To integrate CocoaMQTT into your Xcode project using [CocoaPods](http://cocoapods.org), you need to modify your `Podfile` like the following:
 
 ```ruby
 use_frameworks!
@@ -133,9 +133,9 @@ Note: Please use openssl version 1.1 (e.g. `brew install openssl@1.1`), otherwis
 
 ## MQTT over Websocket
 
-In the 1.3.0, The CocoaMQTT has supported to connect to MQTT Broker by Websocket.
+In the 1.3.0, The CocoaMQTT has supported connecting to MQTT Broker by Websocket.
 
-If you integrated by **CocoaPods**, you need to modify you `Podfile` like the followings and execute `pod install` again:
+If you integrated by **CocoaPods**, you need to modify your `Podfile` like the following and execute `pod install` again:
 
 ```ruby
 use_frameworks!
@@ -178,7 +178,7 @@ let mqtt = CocoaMQTT(clientID: clientID, host: host, port: 8083, socket: websock
 _ = mqtt.connect()
 ```
 
-If you want to add additional custom header to the connection, you can use the following:
+If you want to add an additional custom header to the connection, you can use the following:
 
 ```swift
 let websocket = CocoaMQTTWebSocket(uri: "/mqtt")
@@ -196,7 +196,7 @@ _ = mqtt.connect()
 
 ## Example App
 
-You can follow the Example App to learn how to use it. But we need to make the Example App works fisrt:
+You can follow the Example App to learn how to use it. But we need to make the Example App works first:
 
 ```bash
 $ cd Examples
